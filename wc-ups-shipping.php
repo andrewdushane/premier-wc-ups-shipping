@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: UPS Shipping for WooCommerce
- * Plugin URI: N/A
+ * Plugin URI: https://github.com/andy--d/premier-wc-ups-shipping
  * Description: Adds UPS shipping option to WooCommerce settings
  * Version: 1.0
  * Author: Andrew Dushane
