@@ -28,8 +28,6 @@ function ups_shipping_options_page() {
 	}
 	
 	/*** If UPS info has been entered, validate with UPS ***/
-	$ups_options = null;
-	update_option('wc_ups_shipping', $ups_options);
 	if( isset($_POST['ups_shipping_options_submitted']) ) {
 		$submit_check = esc_html($_POST['ups_shipping_options_submitted']);
 		if ( $submit_check = 'y' ) {
@@ -71,6 +69,7 @@ function ups_shipping_options_page() {
 		$ups_AccessLicenseNumber = $ups_options['ups_AccessLicenseNumber'];
 		$ups_UserID 			 = $ups_options['ups_UserID'];
 		$ups_Password			 = $ups_options['ups_Password'];
+		$hidden_password 		 = preg_replace("|.|","*",$ups_Password);
 		$ups_FromPostalCode		 = $ups_options['ups_FromPostalCode'];
 		$ups_ShipperNumber 		 = $ups_options['ups_ShipperNumber'];
 		$ups_LastUpdated		 = $ups_options['ups_LastUpdated'];

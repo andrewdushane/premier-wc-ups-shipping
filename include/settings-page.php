@@ -73,7 +73,7 @@
 									</tr>
 									<tr>
 										<td>Password:</td>
-										<td><?php echo $ups_Password; ?></td>
+										<td><?php echo $hidden_password; ?></td>
 									</tr>
 									<tr>
 										<td>Shipper Postal Code:</td>
