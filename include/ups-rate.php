@@ -74,7 +74,7 @@ function ups($dest_zip,$dest_country,$service,$weight,$length,$width,$height,$Ac
     		</Package>
     	</Shipment>
     	</RatingServiceSelectionRequest>";
-    	$ch = curl_init("https://www.ups.com/ups.app/xml/Rate");
+    	$ch = curl_init("https://onlinetools.ups.com/ups.app/xml/Rate");
     	curl_setopt($ch, CURLOPT_HEADER, 1);
     	curl_setopt($ch,CURLOPT_POST,1);
     	curl_setopt($ch,CURLOPT_TIMEOUT, 60);
